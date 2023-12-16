@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #6e07f3;
+   font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: eurostile, sans-serif;
+ 
+}
+::selection {
+  background-color: #6e07f3;
+  color: white;
+}
+
+/* scroolbar  start*/
+body {
+  position: relative;
+}
+body::-webkit-scrollbar {
+  display: block;
+  width: 0.62rem;
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 3.125rem;
+}
+/* scroolbar  end*/
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fffbf5;
+}
+.page-1 {
+  height: 100vh;
+  position: relative;
+  background-color: #fffbf5;
+}
+.yin-yang-design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem; 
+}
+.yin-yang {
+  width: 3.125rem;
+  box-sizing: content-box;
+  height: 1.563rem;
+  background: #fff;
+  border-color: #333;
+  border-style: solid;
+  border-width: 0.125rem 0.125rem 1.625rem 0.125rem;
+  border-radius: 100%;
+  position: relative;
+}
+.yin-yang:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #fff;
+  border: 0.588rem solid #333;
+  border-radius: 100%;
+  width: 0.391rem;
+  height: 0.391rem;
+  box-sizing: content-box;
+}
+.yin-yang:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #333;
+  border: 0.588rem solid #fff;
+  border-radius: 100%;
+  width: 0.391rem;
+  height: 0.391rem;
+  box-sizing: content-box;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: red; */
+  height: 8.125rem; 
+}
+#nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  justify-content: space-evenly;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+}
+#nav ul li a:hover {
+  opacity: 0;
+}
+#nav:first-child {
+  color: #6e07f3;
+}
+#nav ul li:first-child {
+}
+#nav ul li:nth-child(2) {
+  padding: 0.563rem 1.25rem;
+  border: 0.156rem solid #6e07f3;
+  border-radius: 1.875rem;
+  transition: all ease-in-out 0.3s;
+}
+#nav ul li:nth-child(2):hover {
+  background-color: #6e07f3;
+  color: white;
+}
+/* arrow download section */
+#arrow {
+  height: 15rem;
+  width: 15rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  position: absolute;
+  display: flex;
+  left: 0.625rem;
+  top: 44.063rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+#arrow i {
+  font-size: 50px;
+  font-weight: 100;
+  color: #6e07f3;
+}
+#arrow:hover {
+  scale: 0.4;
+  background-color: var(--primary-color);
+  color: white;
+}
+#arrow i:hover {
+  color: white;
+}
+.page-1 #hero {
+  margin-top: 3.125rem;
+  /* background-color: red; */
+  height: calc(100vh - 8.125rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.page-1 #hero h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.375rem;
+  color: #141c3a;
+}
+.page-1 #hero p {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  color: rgba(10, 10, 10, 0.9);
+}
+.page-1 #hero .img {
+  margin-top: 1.875rem;
+  height: 18.75rem;
+  aspect-ratio: 1;
+
+  margin-bottom: 6.25rem;
+}
+.code-button button:first-child {
+  margin-right: 1.125rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+  padding: 0.563rem 1.563rem;
+  border: 0.156rem solid #6e07f3;
+  border-radius: 1.875rem; 
+  transition: all ease-in-out 0.3s;
+  background-color: var(--primary-color);
+  color: white;
+}
+.code-button button:first-child:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+.code-button button:nth-child(2) {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+  padding: 0.563rem 1.563rem;
+  border: 0.156rem solid #6e07f3;
+  border-radius: 1.875rem;
+  transition: all ease-in-out 0.3s;
+  background-color: white;
+  color: var(--primary-color);
+}
+.code-button button:nth-child(2):hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+/*responsive page-1*/
+
+@media  (max-width: 803px){
+    :root{
+        font-size: 10px;
+    }
+}
+
+
